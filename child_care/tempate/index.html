@@ -1,0 +1,15 @@
+{% extends base.html%}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
+{% endblock %}
+<body>
+{% block content %}
+    <nav>
+        <a href="{% register.html %}">Register</a>
+        <a href="{% login.html %}">Login</a>
+        <a href="{% logout.html %}">Logout</a>
+    </nav>
+    
+</body>
+{% endblock %}

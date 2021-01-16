@@ -1,0 +1,6 @@
+body
+    {
+        background-image: url("{% static 'images/pexels-katerina-holmes-5905492.jpg%}");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
