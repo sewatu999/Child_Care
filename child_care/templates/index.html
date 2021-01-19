@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% block style %}
+<style>
+    body{
+        /* background-image: url("{% static 'images/20210118_222042.jpg' %}"); */
+        background-image: url("{% static 'images/20210118_204155.jpg' %}");
+
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+        
+</style> 
+{% endblock %}
+{% endblock %}
+<body id='bod'>
+{% block content %}
+<h1>Child Care</h1>
+    <!-- <im src="{% static 'images/pexels-katerina-holmes-5905492.jpg' %}"/> -->
+{% endblock %}
+</body>
