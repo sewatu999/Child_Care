@@ -22,7 +22,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index_view, name='index_view'),
-    path('register/', views.register_view, name='register_view')
+    path('register/', views.register_view, name='register_view'),
+    path('login/', views.login_view, name='login_view'),
+    path('about/', views.about_view, name='about_view'),
+    path('playtime/', views.playtime_view, name='playtime_view')
 ]
 
 # urlpattern += staticefiles_urlpatterns()

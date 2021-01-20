@@ -1,2 +1,46 @@
-{% extends 'child_care/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
+
+{% block head %}{% endblock%}
+
+{% block style %}
+<style>
+    body {
+        /* background-image: url("{% static 'images/pexels-katerina-holmes-5905492.jpg' %}"); */
+    
+        background-image: url("{% static 'images/20210119_091026.jpg' %}");
+
+        background-position: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #lg {
+        color: white;
+    }
+</style>
+{% endblock %}
+
+<body>
+{% block content %}
+<div id="log">
+    <h1 id='lg'>
+        {% block title %}Log In{% endblock %}
+    </h1>
+</div>
+<br>
+<div class="container">
+    <form class="form-group" id="log" autocomplete="off" method="post" action="{url 'login'}">
+        {% csrf_token %} {{ form.as_p }}
+
+        <button type="submit" class="btn btn-success">Log In</button>
+
+
+    </form>
+</div>
+
+{% endblock %}
+</body>

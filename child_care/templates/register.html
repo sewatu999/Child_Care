@@ -6,48 +6,15 @@
 <body>
     {% block content %}
     <div id="regt">
+        <h1>
         {% block title %}Create a Account{% endblock %}
+        </h1>
     </div>
-    
+    <br>
 <div class="container">
-    <form class="form-group" id="reg" method="post" action="{url 'register'}">
+    <form class="form-group" id="reg"  autocomplete="off" method="post" action="{url 'register'}">
         {% csrf_token %} {{ form.as_p }}
-        <!-- <div class="form-group">
-            <label for="id_firstname">Enter First Name</label>
-            <input type="text" name="firstname" required maxlength="100" id="id_firstname"/>
-            {{ forms.first_name }} 
-            
-        </div>
-        <div class="form-group">
-            <label>Last Name</label>
-            {{ forms.Last_name }}
-        </div>
-        <div class="form-group">
-            <label>username</label>
-            {{ forms.username }}
-        </div>
-        <div class="form-group">
-            <label>Password</label>
-            {{ forms.password }}
-        </div> -->
-        <!-- <div class="form-group">
-            <label>Phone Number</label>
-            {{ forms.phone_number }}
-        </div>
-        <div class="form-group">
-            <label>email</label>
-            {{ forms.email }}
-        </div> -->
-        <!-- <div class="form-group">
-            <label>Emergency Contact</label>
-            {{ forms.emergency_contact }}
-        </div> -->
-        <!-- <div class="form-group">
-            <label>Emergency Phone Number</label>
-            {{ forms.emergency_phone_number }}
-        </div> -->
         
-
         <button type="submit" class="btn btn-success">Register</button>
     
 
