@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url, include
+from django.conf.urls.static import static
 from django.urls import path
 from child_care import views
+from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -25,7 +27,8 @@ urlpatterns = [
     path('register/', views.register_view, name='register_view'),
     path('login/', views.login_view, name='login_view'),
     path('about/', views.about_view, name='about_view'),
-    path('playtime/', views.playtime_view, name='playtime_view')
-]
+    path('playtime/', views.playtime_view, name='playtime_view'),
 
-# urlpattern += staticefiles_urlpatterns()
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# urlpatterns += staticefiles_urlpatterns()

@@ -31,6 +31,9 @@ def about_view(request, *args, **kwargs):
     return render(request, "about.html", {})          
 
 def playtime_view(request, *args, **kwargs):
-    return render(request, "playtime.html", {})                
+    my_context = {
+      "my_text": "A safe place for children to learn and play"  
+    }
+    return render(request, "playtime.html", my_context)                
        
    
