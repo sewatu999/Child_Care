@@ -29,15 +29,24 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+LOGIN_REDIRECT_URL = 'login/'
+
+LOGIN_REDIRECT_URL = '/'
+
+# LOGIN_REDIRECT_URL = '/auth/logged_in'
 
 INSTALLED_APPS = [
+    # 'accounts.app.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'child_care'
+    'child_care',
+    'django_extensions',
+    'phonenumber_field',
+    'accounts'
 ]
 
 MIDDLEWARE = [

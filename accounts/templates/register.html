@@ -2,6 +2,17 @@
 {% load static %}
 {% block head %}
 {% endblock %}
+{% block style %}
+<style>
+    body {
+        background-image: url("{% static 'images/20210119_223010.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: 50vw 100vh;
+        padding-bottom: 10px;
+          
+    }
+</style>
+{% endblock %}
 
 <body>
     {% block content %}
@@ -16,8 +27,6 @@
         {% csrf_token %} {{ form.as_p }}
         
         <button type="submit" class="btn btn-success">Register</button>
-    
-
     </form>
 </div>
 

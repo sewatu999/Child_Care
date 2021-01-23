@@ -18,17 +18,23 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.urls import path
 from child_care import views
+# from . import accounts
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index_view, name='index_view'),
-    path('register/', views.register_view, name='register_view'),
-    path('login/', views.login_view, name='login_view'),
-    path('about/', views.about_view, name='about_view'),
-    path('playtime/', views.playtime_view, name='playtime_view'),
+    path('', views.home, name='home_view'),
+    # path('', include('child_care.urls')),
+    
+    # path('register/', views.register, name='register'),
+    # path('login/', views.login_view, name='login_view'),
+    path('about/', views.about, name='about_view'),
+    path('playtime/', views.playtime, name='playtime_view'),
+    path('accounts/', include('accounts.urls'))
+    # path('', include('child_care.urls'))
+] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+path('accounts/', include('accounts.urls'))   
 
 # urlpatterns += staticefiles_urlpatterns()

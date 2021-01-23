@@ -17,10 +17,6 @@
         height: 100%;
 
     }
-
-    #lg {
-        color: white;
-    }
 </style>
 {% endblock %}
 
@@ -32,6 +28,9 @@
     </h1>
 </div>
 <br>
+{% if form.errors %}
+<p>Your username and password do not match. Please try again.</p>
+{% endif%}
 <div class="container">
     <form class="form-group" id="log" autocomplete="off" method="post" action="{url 'login'}">
         {% csrf_token %} {{ form.as_p }}

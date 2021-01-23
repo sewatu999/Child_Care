@@ -17,6 +17,9 @@
         <div id="content">
         {% block content %}
         {% csrf_token %} {{ form.as_p }}
+        <button type=submit>
+        <a href="{% url '/accounts/login' %}">Login</a>
+        </button>
         {% endblock%}
         </div>
     </body>

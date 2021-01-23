@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm
-# from django import phoneNumber
+# from phonenumber_field import phonenumber
 
 
 class RegisterForm(UserCreationForm):
@@ -10,7 +10,7 @@ class RegisterForm(UserCreationForm):
     lastname = forms.CharField(label="Enter Last Name",max_length=100)
     username = forms.CharField(label="Enter Username",max_length=100)
     password = forms.CharField(label="Enter password",max_length=200)
-    # phonenumber = PhoneNumberField(label="Enter phone number",)
+    # phone_number = PhoneNumberField(blank=True, label="Enter phone number",)
     # email = forms.EmailField(label="Enter email address",max_length=200, blank=True, unique=True)
     emergency_contact = forms.CharField(label="Enter Emergency Contact",max_length=200)
     # emergency_phonenumber = PhoneNumberField(label="Enter Emergency Phone Number",)
