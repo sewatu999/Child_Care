@@ -36,7 +36,7 @@ LOGIN_REDIRECT_URL = '/'
 # LOGIN_REDIRECT_URL = '/auth/logged_in'
 
 INSTALLED_APPS = [
-    # 'accounts.app.AccountsConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'child_care',
     'django_extensions',
     'phonenumber_field',
-    'accounts'
+    # 'accounts'
 ]
 
 MIDDLEWARE = [

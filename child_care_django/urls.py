@@ -31,10 +31,10 @@ urlpatterns = [
     # path('login/', views.login_view, name='login_view'),
     path('about/', views.about, name='about_view'),
     path('playtime/', views.playtime, name='playtime_view'),
-    path('accounts/', include('accounts.urls'))
-    # path('', include('child_care.urls'))
+    path('', include('accounts.urls'))
+    #  path('', include('child_care.urls'))   
 ] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-path('accounts/', include('accounts.urls'))   
+path('', include('accounts.urls'))   
 
 # urlpatterns += staticefiles_urlpatterns()

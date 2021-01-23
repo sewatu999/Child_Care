@@ -10,4 +10,5 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('playtime/', views.playtime, name='playtime')
+    # path('accounts/', include('accounts.urls'))
 ]
