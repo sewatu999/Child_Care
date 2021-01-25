@@ -6,25 +6,29 @@ from django.contrib.auth.forms import AuthenticationForm
 # Create your views here.
 
 def register(request, *args, **kwargs):
+    if request.method == "GET":
+        return render(request, template_name= 'register.html')
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login')
-    form = RegisterForm()
-    return render(request, "register.html", {'form':form})
+            return redirect('accounts/login')
+    user = RegisterForm()
+    return render(request, "accounts/register.html", {'form':user})
 
 def login(request, *args, **kwargs):
+    if request.method == "GET":
+        return render('accounts/login/')
     if request.method == "POST":
         form = AuthenticationForm(data= request.POST)
         if form.is_valid():
             return redirect('home')
     else:
         form = AuthenticationForm()        
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'accounts/login.html', {'form': form})
 
 def logout(request, *args, **kwargs):
-    cc_context = {
-        'cc_text': 'Logged Out!'
+    my_context = {
+        'my_text': 'Logged Out!'
     }
-    return render(request, "logout.html", cc_context)          
+    return render(request, "logout.html", my_context )          

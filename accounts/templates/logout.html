@@ -1,8 +1,13 @@
-{% extends 'child_care/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+{% endblock %}
+
+<body id="lgo">
 {% block content %}
-    <h5>{ cc_text }</h5>
-    <a href="{% url 'login' %}">Login</a>
+    <h5>{{ my_text }}</h5>
+    
 
 {% endblock %}
+</body>
