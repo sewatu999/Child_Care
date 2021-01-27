@@ -7,35 +7,14 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 def home(request):
+    my_context ={
+        'text':  'Encouraging and moulding future leaders' 
+    }
     
-    return render(request, "home.html")
+    return render(request, "home.html", my_context)
 
-# def register(request, *args, **kwargs):
-#     if request.method == "POST":
-#         form = UserCreationForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('login')
-#     user = RegisterForm()
-#     return render(request, "register.html", {'form':user})
-
-# def login_view(request, *args, **kwargs):
-#     if request.method == "POST":
-#         form = AuthenticationForm(data= request.POST)
-#         if form.is_valid():
-#             return redirect('home')
-#     else:
-#         form = AuthenticationForm()        
-#     return render(request, 'login.html', {'form': form})
-
-# def logout(request, *args, **kwargs):
-#     cc_context = {
-#         'cc_text': 'Logged Out!'
-#     }
-#     return render(request, "logout.html", cc_context)          
-
-def about(request):
-    return render(request, "about.html", {})          
+def about_owner(request):
+    return render(request, "about_owner.html", {})          
 
 def playtime(request):
     my_context = {

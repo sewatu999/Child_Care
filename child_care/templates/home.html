@@ -21,17 +21,25 @@
 <body id='bod'>
 {% block content %}
 
-<nav>
+<nav id='nav'>
     <h1 id="te">Playtime Nursery School</h1>
         <h2 id="te">& Learning Center</h2>
    
     <button type='submit'>
-        <a href= 'playtime' >Playtime</a>
-    </button>    
-       
- 
-
+        <a href= 'register/' >Register</a>
+    </button> 
+    <button type='submit'>
+        <a href='login/'>Login</a>
+    </button>
+    <button type='submit'>
+        <a href='about_owner/'>About Owner</a>
+    </button>
 </nav>
-    
+
+<footer>
+    <h5 id='ft'>
+        {{ text }}
+    </h5>
+</footer>
 {% endblock %}
 </body>

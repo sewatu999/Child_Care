@@ -1,0 +1,34 @@
+{% extends base.html %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% block style %}
+{% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+    <nav>
+        <h1 id="te">Playtime Nursery School</h1>
+        <h2 id="te">& Learning Center</h2>
+        <button type='submit'>
+            <a href='login/'>Login</a>
+        </button>
+    </nav>
+    <br>
+    <div id="regt">
+        <h1>
+            {% block title %}Create Child Account{% endblock %}
+        </h1>
+    </div>
+    <br>
+    <div class="container">
+        <form class="form-group" id="reg" autocomplete="off" method="post" action="{url 'child_signUp/'}">
+            {% csrf_token %} {{ form.as_p }}
+    
+        <button type="submit" class="btn btn-success">Register</button>
+        </form>
+    </div>
+{% endblock %}

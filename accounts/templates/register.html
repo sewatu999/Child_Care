@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block head %}
-{% endblock %}
-{% block style %}
-<style>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block style %}
+    <style>
     body {
         background-image: url("{% static 'images/20210119_223010.jpg' %}");
         background-repeat: no-repeat;
@@ -15,28 +15,41 @@
     {
         color: white;
     }
-    #reg
+    /* #reg
     {
         color: white;
-    }
-</style>
+    } */
+    </style>
+    {% endblock %}
 {% endblock %}
 
 <body>
-    {% block content %}
+{% block content %}
+
+    <nav>
+        <h1 id="tee">Playtime Nursery School</h1>
+        <h2 id="tee">& Learning Center</h2>
+    </nav>
+    
     <div id="regt">
         <h1>
-        {% block title %}Create a Account{% endblock %}
+            {% block title %}Create a Account{% endblock %}
         </h1>
     </div>
     <br>
-<div class="container">
-    <form class="form-group" id="reg"  autocomplete="off" method="post" action="{url 'register/'}">
-        {% csrf_token %} {{ form.as_p }}
-        
-        <button type="submit" class="btn btn-success">Register</button>
-    </form>
-</div>
+    <div class="container">
+        <form class="form-group" id="reg"  autocomplete="off" method="post" action="{url 'register/'}">
+            {% csrf_token %} {{ form.as_p }}
+            
+            <button type="submit" class="btn btn-success">Register</button>
+        </form>
+    </div>
+    <button id='regb' type='submit'>
+        <a href='accounts/logout'>Logout</a>
+    </button>
+    <button id='regb' type='submit'>
+        <a href='home/'>Home</a>
+    </button>
 
 {% endblock %}
 </body>

@@ -25,14 +25,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('', include('accounts.urls')),
     path('admin/', admin.site.urls),
-    path('', views.home, name='home_view'),
-    # path('', include('child_care.urls')),
-    
-    # path('register/', views.register, name='register'),
-    # path('accounts/login/', views.login, name='login'),
-    path('about/', views.about, name='about_view'),
-    path('playtime/', views.playtime, name='playtime_view'),
-    #  path('', include('child_care.urls'))   
+    path('', views.home, name='home'),
+    path('about_owner/', views.about_owner, name='about'),
+    path('playtime/', views.playtime, name='playtime'),
+       
 ] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
    
