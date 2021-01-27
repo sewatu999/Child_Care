@@ -6,8 +6,9 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
-def home(request, *args, **kwargs):
-    return render(request, "home.html", {})
+def home(request):
+    
+    return render(request, "home.html")
 
 # def register(request, *args, **kwargs):
 #     if request.method == "POST":
@@ -33,10 +34,10 @@ def home(request, *args, **kwargs):
 #     }
 #     return render(request, "logout.html", cc_context)          
 
-def about(request, *args, **kwargs):
+def about(request):
     return render(request, "about.html", {})          
 
-def playtime(request, *args, **kwargs):
+def playtime(request):
     my_context = {
       "my_text": "A safe place for children to learn and play"  
     }
