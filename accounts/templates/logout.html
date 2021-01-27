@@ -2,12 +2,19 @@
 {% load static %}
 
 {% block head %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% block style %}
+<style>
+
+</style>
+{% endblock %}
 {% endblock %}
 
 <body id="lgo">
-{% block content %}
-    <h5>{{ my_text }}</h5>
+    {% block content %}
+        <p>Logged Out!</p>
+        <h5>{{ my_text }}</h5>
     
 
-{% endblock %}
+    {% endblock %}
 </body>
