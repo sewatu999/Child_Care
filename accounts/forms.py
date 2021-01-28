@@ -32,3 +32,15 @@ class login(AuthenticationForm):
         model = User
         fields = ["username", "password"]
         widgets = {"password": forms.PasswordInput}
+
+class RegisterForm(UserCreationForm):
+    firstname = forms.CharField(label="Enter First Name",max_length=200)
+    lastname = forms.CharField(label="Enter Last Name",max_length=200)
+    nickname = forms.CharField(label="Enter Username",max_length=200)
+    medications = forms.CharField(label="Enter Username",max_length=200)
+    date_of_birth = forms.DateField(label="Date of Birth")
+    
+    class Meta:
+        model = User
+        fields = ["firstname", "lastname", "nickname", "medications", "date_of_birth"] 
+        

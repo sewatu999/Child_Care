@@ -23,18 +23,18 @@ def login(request, *args, **kwargs):
     if request.method == "POST":
         form = AuthenticationForm(data= request.POST)
         if form.is_valid():
-            return redirect('home')
+            return redirect('child_signUp')
     else:
         form = AuthenticationForm()        
-    return render(request, 'accounts/login.html', {'form': form})
+    return render(request, '/login.html', {'form': form})
 
 def logout(request, *args, **kwargs):
     my_context = {
         "my_text": "Logged Out!"
     }
-    return render(request, "accounts/logout.html", my_context)
+    return render(request, "/logout.html", my_context)
 
-def child_signUp(request, *args, **kwargs):
+def child(request, *args, **kwargs):
     # if request.method == "GET":
     #     return render(request, template_name= 'register.html')
     if request.method == "POST":
@@ -43,4 +43,4 @@ def child_signUp(request, *args, **kwargs):
             form.save()
             return redirect('playtime')
     user = RegisterForm()
-    return render(request, "child_signUp.html", {'form': user})              
+    return render(request, "/child.html", {'form': user})              

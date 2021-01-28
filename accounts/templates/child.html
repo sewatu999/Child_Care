@@ -25,7 +25,7 @@
     </div>
     <br>
     <div class="container">
-        <form class="form-group" id="reg" autocomplete="off" method="post" action="{url 'child_signUp/'}">
+        <form class="form-group" id="reg" autocomplete="off" method="post" action="{url 'child/'}">
             {% csrf_token %} {{ form.as_p }}
     
         <button type="submit" class="btn btn-success">Register</button>
