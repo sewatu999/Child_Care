@@ -1,12 +1,13 @@
 from django import forms
 from django.shortcuts import render
 from .forms import RegisterForm
+from .forms import ChildForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 
 # Create your views here.
 
-def register(request, *args, **kwargs):
+def register(request):
     # if request.method == "GET":
     #     return render(request, template_name= 'register.html')
     if request.method == "POST":
@@ -17,7 +18,7 @@ def register(request, *args, **kwargs):
     user = RegisterForm()
     return render(request, "register.html", {'form': user})
 
-def login(request, *args, **kwargs):
+def login(request):
     # if request.method == "GET":
     #     return render('accounts/login/')
     if request.method == "POST":
@@ -34,13 +35,13 @@ def logout(request, *args, **kwargs):
     }
     return render(request, "/logout.html", my_context)
 
-def child(request, *args, **kwargs):
+def child(request):
     # if request.method == "GET":
-    #     return render(request, template_name= 'register.html')
+    #     return render(request, template_name= 'child.html')
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('playtime')
-    user = RegisterForm()
-    return render(request, "/child.html", {'form': user})              
+    child = ChildForm()
+    return render(request, "child.html", {'form': child})              
