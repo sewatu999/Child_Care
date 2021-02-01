@@ -5,16 +5,25 @@
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block style %}
 <style>
-
+    body
+    {
+        margin-left: 20px;
+    }
 </style>
 {% endblock %}
 {% endblock %}
 
-<body id="lgo">
+<body id="bod">
     {% block content %}
+    <nav>
+        <h1 id="bee">Playtime Nursery School</h1>
+        <h2 id="bee">& Learning Center</h2>
+    </nav>
         <p>Logged Out!</p>
         <h5>{{ my_text }}</h5>
-    
+    <button id='regb' type='button'>
+        <a href='home/'>Home</a>
+    </button>    
 
     {% endblock %}
 </body>

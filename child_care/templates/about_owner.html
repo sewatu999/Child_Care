@@ -4,20 +4,27 @@
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block style %}
 <style>
-   
+    body{
+        margin-left: 20px;
+    }   
 </style>
 {% endblock %}
 {% endblock %}
 
-<body id='bod'>
+<body id="bod">
     {% block content %}
     <nav>
         <h1 id="te">Playtime Nursery School</h1>
         <h2 id="te">& Learning Center</h2>
-        <button type='submit'>
+        <button type='button'>
             <a href='logout/'>Logout</a>
         </button>
-        
+        <button type='home'>
+            <a href='home/'>Home</a>
+        </button>
+        <button type='button'>
+            <a href='playtime/'>Playtime</a>
+        </button>
 
     </nav>
     <p>This is About Page</p>

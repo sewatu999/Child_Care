@@ -1,3 +1,10 @@
+#bod
+{
+    border-width: 23px;
+    border-color: black;
+    margin-left: 20px;
+}
+
 #te
 {
     color: rgb(196, 5, 5);
@@ -19,6 +26,11 @@
     color: rgb(196, 5, 5);
     margin-top: 46rem;
 }
+#regb
+{
+    background-color: #ff0000;
+}
+
 
 
    

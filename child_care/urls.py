@@ -1,5 +1,6 @@
 from django.urls import path, reverse, NoReverseMatch
 from child_care import views
+from . import views
 # from django.contrib.auth import views as auth_views
 
 
@@ -12,3 +13,4 @@ urlpatterns = [
     path('playtime/', views.playtime, name='playtime')
     # path('accounts/', include('accounts.urls'))
 ]
+# path('about_owner/home/', views.home, name='home'),

@@ -29,9 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-LOGIN_REDIRECT_URL = 'login/'
-
 LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/'
 
 # LOGIN_REDIRECT_URL = '/auth/logged_in'
 
@@ -85,11 +85,12 @@ WSGI_APPLICATION = 'child_care_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'child_care',
         'USER': 'child_careuser',
-        'PASSWORD': 'child_care',
-        'HOST': 'localhost'
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

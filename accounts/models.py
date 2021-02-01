@@ -1,5 +1,7 @@
 from django.db import models
 from django.forms import ModelForm
+from django.contrib.auth.models import User
+# from django.contrib.postgres.fields import Charfield, IntegerField
 
 # Create your models here.
 

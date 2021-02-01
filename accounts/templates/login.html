@@ -11,6 +11,7 @@
         background-position: contain;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-left: 20px;
         width: 100%;
         height: 100%;
 
@@ -19,8 +20,12 @@
     {% endblock %}
 {% endblock%}
 
-<body>
+<body id="bod">
 {% block content %}
+<nav>
+    <h1 id="lg">Playtime Nursery School</h1>
+    <h2 id="lg">& Learning Center</h2>
+</nav>
 <div id="log">
     <h1 id='lg'>
         {% block title %}Log In{% endblock %}
@@ -39,6 +44,8 @@
 
     </form>
 </div>
-
+<button id='log' type='button'>
+    <a href='home/'>Home</a>
+</button>
 {% endblock %}
 </body>
