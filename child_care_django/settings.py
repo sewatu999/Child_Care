@@ -90,7 +90,7 @@ DATABASES = {
         'USER': 'child_careuser',
         'PASSWORD': 'password',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 

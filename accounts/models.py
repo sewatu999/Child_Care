@@ -1,6 +1,7 @@
 from django.db import models
 from django.forms import ModelForm
 from django.contrib.auth.models import User
+
 # from django.contrib.postgres.fields import Charfield, IntegerField
 
 # Create your models here.
@@ -18,7 +19,7 @@ class Register(models.Model):
 class RegisterForm(ModelForm):
     class Meta:
         model = Register
-        fields = ["firstname", "lastname", "username", "password", "email", "emergency_contact", ] 
+        fields = ["firstname", "lastname", "phone_number", "email", "username", "password", "emergency_contact", "emergency_phonenumber" ] 
         
 class Child(models.Model):
     firstname = models.CharField(max_length=200)
@@ -33,5 +34,5 @@ class Child(models.Model):
 class ChildForm(ModelForm):    
     class Meta:
         model = Child
-        fields = ["firstname", "lastname", "parentsname", "nickname", "medications", "date_of_birth", "age"] 
+        fields = ["firstname", "lastname", "parentsname", "medications", "nickname", "date_of_birth", "age"] 
                 
