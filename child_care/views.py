@@ -8,7 +8,8 @@ from django.shortcuts import render, redirect
 
 def home(request):
     my_context ={
-        'text':  'Encouraging and moulding intelligent future leaders' 
+        'text':  'Encouraging and molding intelligent future leaders',
+        'my_text': 'Phone Number: (937) 268-4395' 
     }
     
     return render(request, "home.html", my_context)

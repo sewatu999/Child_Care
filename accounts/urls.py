@@ -16,6 +16,8 @@ path('login/', include("child_care.urls")),
 
 path('child/', views.child, name='child'),
 
+path('child/', include("child_care.urls")),
+
 path("register/", views.register, name='register'),
 
 path('myadmin/', admin_site.urls),

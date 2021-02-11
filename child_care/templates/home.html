@@ -14,6 +14,7 @@
         height: 300%;        
     }
     
+    
         
 </style> 
 {% endblock %}
@@ -21,19 +22,22 @@
 <body id="bod">
 {% block content %}
 
-<nav id='nav'>
+<nav >
     <h1 id="te">Playtime Nursery School</h1>
-        <h2 id="te">& Learning Center</h2>
+        <h2 id="two">& Learning Center</h2>
    
-    <button type='button'>
+    <button id='hme' type='button'>
         <a href= 'register/' >Register</a>
     </button> 
-    <button type='button'>
+    <button id='hme' type='button'>
         <a href='login/'>Login</a>
     </button>
-    <button type='button'>
+    <button id='hme' type='button'>
         <a href='about_owner/'>About Owner</a>
     </button>
+    <div id='fon' style="float:right; color:rgb(196, 5, 5); margin-right: 20px;">
+    <h5 >{{ my_text }}</h5>
+    </div>
 </nav>
 
 

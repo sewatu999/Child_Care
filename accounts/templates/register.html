@@ -15,10 +15,7 @@
     #regt
     {
         color: white;
-    }
-    #bee
-    {
-        color: #ff0000;
+        float: right;
     }
     #reg
     {
@@ -35,25 +32,25 @@
     <nav>
         <h1 id="bee">Playtime Nursery School</h1>
         <h2 id="bee">& Learning Center</h2>
+        
+        <div id="regt" >
+            <h1>
+                {% block title %}Create a Account{% endblock %}
+            </h1>
+        </div>
     </nav>
-    
-    <div id="regt">
-        <h1>
-            {% block title %}Create a Account{% endblock %}
-        </h1>
-    </div>
     <br>
     <div class="container">
         <form class="form-group" id="reg"  autocomplete="off" method="post" action="{url 'register/'}">
             {% csrf_token %} {{ form.as_p }}
             
-            <button type="submit" class="btn btn-success">Register</button>
+            <button id='all_btn' type="submit" class="btn btn-success">Register</button>
         </form>
     </div>
-    <button id='regb' type='button'>
+    <button id='reb' type='button'>
         <a href='accounts/logout'>Logout</a>
     </button>
-    <button id='regb' type='button'>
+    <button id='reb' type='button'>
         <a href='home/'>Home</a>
     </button>
 

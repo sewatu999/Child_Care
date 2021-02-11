@@ -4,10 +4,28 @@
     border-color: black;
     margin-left: 20px;
 }
+#hme
+{
+    font-weight: bolder;
+    padding: 5px;
+    border-color: black;
+    border-radius: 30px;
 
+}
 #te
 {
     color: rgb(196, 5, 5);
+    margin-top: 1rem;
+    
+}
+#two
+{
+    color: rgb(196, 5, 5);
+}
+#fee
+{
+    color: rgb(196, 5, 5);
+    margin-top: 44rem;
 }
 #bee
 {
@@ -17,19 +35,48 @@
 {
     color: white;
 }
+#log_btn
+{
+    margin-top: 30em;
+    font-weight: bold;
+    padding: 5px;
+    float: right;
+    border-radius: 30px;
+}
 #lgo
 {
     color: blue;
 }
-#fee
+#ctn
+{
+    float: left;
+}
+#all_btn
+{
+    border-radius: 20px;
+}
+#reb
+{
+    border-color: blue;
+    background-color: #ff0000;
+    border-radius: 20px;
+}
+#chd
+{
+    margin-top: 15em;
+    border-radius: 20px;
+}
+#cld
+{
+    color: #ffffff;
+}
+#rec
 {
     color: rgb(196, 5, 5);
-    margin-top: 46rem;
-}
-#regb
-{
-    background-color: #ff0000;
-}
+    float: right;
+    border-bottom-style: dotted;
+    border-bottom-color: black;
+}       
 
 
 

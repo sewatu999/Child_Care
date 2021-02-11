@@ -1,16 +1,16 @@
-from django.urls import path, reverse, NoReverseMatch
-# from child_care.admin import admin_site
+from django.urls import path, reverse
+from django.conf.urls import url, include
+from django.contrib import admin
 from . import views
 # from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
 
-    # path('myadmin/', admin_site.urls),
-    # path('login/', views.login, name='login')
+    # path('my_admin/', admin_site.urls),
     path('home/', views.home, name='home'),
     path('about_owner/', views.about_owner, name='about'),
-    path('playtime/', views.playtime, name='playtime')
+    path('playtime/', views.playtime, name='playtime'),
+    # path('about_owner/', include('child_care.views.urls')),
     # path('accounts/', include('accounts.urls'))
 ]
-# path('about_owner/home/', views.home, name='home'),

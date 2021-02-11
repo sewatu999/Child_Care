@@ -13,14 +13,6 @@
             margin-left: 20px;
     
         }
-        #cld
-        {
-            color: #ffffff;
-        }
-        #regc
-        {
-            color: rgb(196, 5, 5);
-        }        
     </style>
 {% endblock %}
 
@@ -31,13 +23,10 @@
     <nav>
         <h1 id="te">Playtime Nursery School</h1>
         <h2 id="te">& Learning Center</h2>
-        <button type="button">
-            <a href='home/'>Home</a>
-        </button>
     </nav>
     <br>
-    <div >
-        <h1 id="regc">
+    <div id="rec">
+        <h1>
             {% block title %}Create Child Account{% endblock %}
         </h1>
     </div>
@@ -45,9 +34,12 @@
     <div class="container">
         <form class="form-group" id="cld" autocomplete="off" method="post" action="{url 'child/'}">
             {% csrf_token %} {{ form.as_p }}
-    
-        <button type="submit" class="btn btn-success">Register</button>
+            
+            <button id='all_btn' type="submit" class="btn btn-success">Register</button>
         </form>
     </div>
-{% endblock %}
+    <button id='chd' type="button">
+        <a href='home/'>Home</a>
+    </button>
+    {% endblock %}
 </body>
