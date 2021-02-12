@@ -21,6 +21,13 @@ def playtime(request):
     my_context = {
       "my_text": "A safe place for children to learn and play"  
     }
-    return render(request, "playtime.html", my_context)                
+    return render(request, "playtime.html", my_context)
+
+def contact(request):
+    my_context = {
+       "mess": "Send staff a message with any of your questions and concerns" 
+    }
+    return render(request, "contact.html", my_context)
+
        
    

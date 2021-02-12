@@ -1,5 +1,5 @@
 from django import forms
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import RegisterForm
 from .forms import ChildForm
 from django.contrib.auth.forms import UserCreationForm
