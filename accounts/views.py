@@ -24,7 +24,7 @@ def login(request):
     if request.method == "POST":
         form = AuthenticationForm(data= request.POST)
         if form.is_valid():
-            return redirect('child_signUp')
+            return redirect('accounts/child')
     else:
         form = AuthenticationForm()        
     return render(request, '/login.html', {'form': form})

@@ -11,21 +11,21 @@
 <body id="bod">
     {% block content %}
     <nav style='margin-top:1em; '>
-        <h1 id="lg">Playtime Nursery School</h1>
-        <h2 id="lg">& Learning Center</h2>
+        <h1 id="con">Playtime Nursery School</h1>
+        <h2 id="con">& Learning Center</h2>
     </nav>
     <p>
         {{ mess }}
     </p>
     <div id="log title" style='float:right; margin-right:25p;'>
-        <h1 id='lg'>
+        <h1 id='con'>
             {% block title %}Contact{% endblock %}
         </h1>
     </div>
     <br>
-<div id='ctn' class="container" style='margin-top: 5em;'>
-    <form class="form-group" id="log" autocomplete="off" method="post" action="{url 'contact'}">
-        {% csrf_token %} {{ form.as_p }}
+<div id='con' class="container" style='margin-top: 5em;'>
+    <form class="form-group" id="con" autocomplete="off" method="POST" action="{'abduljames2020@gmail.com'}">
+        
 
         <button id='all_btn' type="submit" class="btn btn-success">message</button>
 
