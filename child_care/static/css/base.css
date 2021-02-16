@@ -14,13 +14,13 @@
 }
 #te
 {
-    color: rgb(196, 5, 5);
-    margin-top: 1rem;
+    /* color: rgb(196, 5, 5);
+    margin-top: 1rem; */
     
 }
 #two
 {
-    color: rgb(196, 5, 5);
+    /* color: rgb(196, 5, 5); */
 }
 #fee
 {
@@ -77,19 +77,21 @@
     border-bottom-style: dotted;
     border-bottom-color: black;
 }
-.container1
+.dropdown-content
 {
     display: inline-block;
     cursor: pointer;
 }
-.bar1 .bar2 .bar3
+/* .bar1 .bar2 .bar3
 {
-    width: 35px;
-    height: 5px;
+    width: 45px;
+    height: 9px;
     background-color: rgb(196, 5, 5);
     margin: 6px 0;
-    transition: 0.4s;
-} 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px grey;
+    transition: all .5s ease-in-out;
+}  */
 .change .bar1
 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -103,7 +105,15 @@
 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-}   
+}
+.nave
+{
+    background: black;
+} 
+#nav ul li a:hover
+{
+    background: rgb(196, 5, 5);
+}  
 
 
 
