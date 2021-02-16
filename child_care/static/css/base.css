@@ -1,7 +1,7 @@
 #bod
 {
     border-width: 23px;
-    border-color: black;
+    
     margin-left: 20px;
 }
 #hme
@@ -12,16 +12,16 @@
     border-radius: 30px;
 
 }
-#te
+/* #te
 {
-    /* color: rgb(196, 5, 5);
-    margin-top: 1rem; */
+    color: rgb(196, 5, 5);
+    margin-top: 1rem;
     
-}
-#two
+} */
+/* #two
 {
-    /* color: rgb(196, 5, 5); */
-}
+     color: rgb(196, 5, 5); 
+} */
 #fee
 {
     color: rgb(196, 5, 5);
@@ -108,11 +108,11 @@
 }
 .nave
 {
-    background: black;
+    background: grey;
 } 
-#nav ul li a:hover
+.nave .mainMenu a:hover
 {
-    background: rgb(196, 5, 5);
+    background: red;
 }  
 
 
