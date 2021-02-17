@@ -7,24 +7,24 @@
         <meta name="viewport" content="width=device-width", initial-scale=1.0>
         <title>{% block title %}Child Care{% endblock %}</title>
         <link href="{% static 'css/base.css' %}" rel='stylesheet'/>
-        <script src="{% static 'js/child.js' %}"></script>
         <script src="https://use.fontawesome.com/28ea9c4d77.js"></script>
-
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
-{% block head %}
-{% block style %}
-{% endblock %}
+        {% block head %}
+        {% block style %}
+        {% endblock %}
         
-{% endblock%}
+        {% endblock%}
     </head>
     <body>
+        <script src="{% static 'js/child.js' %}"></script>
         
-{% block content %}
-{% csrf_token %} {{ form.as_p }}
+        {% block content %}
+        {% csrf_token %} {{ form.as_p }}
         
-{% endblock%}
+        {% endblock%}
         
     </body>
 </html>

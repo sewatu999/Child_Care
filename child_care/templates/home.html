@@ -2,10 +2,9 @@
 {% load static %}
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
-<script src="{% static 'js/child.js' %}"></script>
 {% block style %} 
 <style>
-   
+    
     body{       
         background-image: url("{% static 'images/20210118_222042.jpg' %}");
         background-repeat: no-repeat;
@@ -16,50 +15,55 @@
     }
     
     
-        
-</style> 
-{% endblock %}
-{% endblock %}
-<!-- <body id="bod"> -->
-    {% block content %}
-   
-    <nav class="nave">
-        <h1 id="te">Playtime Nursery School</h1>
-        <h2 id=two>& Learning Center</h2>
-        
-        <div class="menu" style='float:right;'>
-        <div class="openMenu">Menu
-            <i class="fa fa-bars"></i>
-        </div>
-        <ul class="mainMenu">
-            <li><a href= 'register/' >Register</a></li>
-            <li><a href='login/'>Login</a></li>
-            <li><a href='about_owner/'>About Owner</a></li>
-            <div class="closeMenu"><i class="fa fa-times"></i></div>
-            <span class="icons">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            </span>    
-        </ul>
-        </div>
-        <div id='fon' style="float:right; color:rgb(196, 5, 5); margin-right: 20px;">
-            <h5 >{{ my_text }}</h5>
-        </div>
-    </nav>
     
-    <!-- <div class='bar1'></div>
-    <div class='bar2'></div>
-    <div class='bar3'></div> -->
+    </style> 
+{% endblock %}
+{% endblock %}
+<body id="bod">
+    {% block content %}
+    <header>
+        <nav class="nave">
+            <h1 id="te">Playtime Nursery School</h1>
+            <h2 id=two>& Learning Center</h2>
+            
+            <div class="menu" style='float:right;'>
+                <button class="menuList" id="menuList" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <div class='bar1'></div>
+                    <div class='bar2'></div>
+                    <div class='bar3'></div>
+                    <div class="dropdown-content">            
+                        <ul class="mainMenu" id="nav-ul">
+                            <li><a href= 'register/' >Register</a></li>
+                            <li><a href='login/'>Login</a></li>
+                            <li><a href='about_owner/'>About Owner</a></li>
+                            <li><a href='contact/'>Contact</a></li>
+                            
+                            <span class="icons">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </span>    
+                        </ul>
+                    </div>
+                </button>
+            </div>
+            <div id='fon' style="float:right; color:rgb(196, 5, 5); margin-right: 20px;">
+                <h5 >{{ my_text }}</h5>
+            </div>
+        </nav>
+    </header>
+    
     <!-- <button id='hme' type='button'>
     </button> 
     <button id='hme' type='button'>
     </button>
     <button id='hme' type='button'>
     </button> -->
-
-
+    
+    
     <h5 id='fee'>{{ text }}</h5>
-
-{% endblock %}
-<!-- </body> -->
+    
+    <script src="{% static 'js/child.js' %}"></script>
+    {% endblock %}
+</body>
