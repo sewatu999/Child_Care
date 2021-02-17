@@ -1,9 +1,9 @@
 function myFunction(){
-    var x = document.getElementById("menuList")
-    if (x.style.display == "block") {
-        x.style.display == "none";
+    var x = document.getElementById("mainMenu");
+    if (x.className === "navbar-collapse") {
+        x.className += " responsive";
     } else {
-        x.style.display = "x"
+        x.className = "navbar-collapse"
     }
 
 }

@@ -26,13 +26,14 @@
             <h1 id="te">Playtime Nursery School</h1>
             <h2 id=two>& Learning Center</h2>
             
-            <div class="menu" style='float:right;'>
-                <button class="menuList" id="menuList" onclick="myFunction()">
+            <div class="menu" style='float:right; margin-left:20px;'>
+                <button id="menuBtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="menuList">
                     <i class="fa fa-bars"></i>
-                    <div class='bar1'></div>
-                    <div class='bar2'></div>
-                    <div class='bar3'></div>
-                    <div class="dropdown-content">            
+                    <span class="icon-bar1"></span>
+                    <span class="icon-bar2"></span>
+                    <span class="icon-bar3"></span>
+                </button>
+                    <div class="navbar-collapse" id="menuList" data-toggle="collapse">            
                         <ul class="mainMenu" id="nav-ul">
                             <li><a href= 'register/' >Register</a></li>
                             <li><a href='login/'>Login</a></li>
@@ -45,8 +46,8 @@
                                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                             </span>    
                         </ul>
+                        <a href="javascriipt:void(0);" class="icon" onclick="myFunction()"></a>
                     </div>
-                </button>
             </div>
             <div id='fon' style="float:right; color:rgb(196, 5, 5); margin-right: 20px;">
                 <h5 >{{ my_text }}</h5>
