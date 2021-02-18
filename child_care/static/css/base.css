@@ -93,6 +93,7 @@
 {
     width: 45px;
     height: 9px;
+    color: rgb(196, 5, 5);
     background-color: rgb(196, 5, 5);
     margin: 6px 0;
     border-radius: 5px;
@@ -113,10 +114,10 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-.nave
+.header
 {
-    background: transparent;
-    /* flex-wrap: wrap; */
+    background: blue;
+    flex-wrap: wrap;
     width: 100vw;
 } 
 .nave #mainMenu li a:hover

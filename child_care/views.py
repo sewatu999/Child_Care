@@ -26,18 +26,18 @@ def playtime(request):
     return render(request, "playtime.html", my_context)
 
 def contact(request):
-    
-    
-    subject = form.cleaned.data['subject']
-    message = form.cleaned_data['message']
-    sender = form.cleaned_data['sender email']
-    cc_myself = form.cleaned_data['cc_myself']
+    if request.method == "POST":
+        if form.is_valid():    
+            subject = form.cleaned.data['subject']
+            message = form.cleaned_data['message']
+            sender = form.cleaned_data['sender email']
+            cc_myself = form.cleaned_data['cc_myself']
 
-    recipients = ['abduljames@gmail.com']
-    if cc_myself:
-        recipients.append(sender) 
+            recipients = ['abduljames@gmail.com']
+            if cc_myself:
+                recipients.append(sender) 
 
-    send_mail(subject, message, sender, recipient),    
+            send_mail(subject, message, sender, recipient),    
     my_context = {
        "mess": "Send staff a message with any of your questions and concerns" 
     }

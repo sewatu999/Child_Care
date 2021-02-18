@@ -1,7 +1,7 @@
 function myFunction(){
-    var x = document.getElementById("mainMenu");
+    var x = document.getElementById("menuList");
     if (x.className === "navbar-collapse") {
-        x.className += " responsive";
+        x.className += "show";
     } else {
         x.className = "navbar-collapse"
     }
