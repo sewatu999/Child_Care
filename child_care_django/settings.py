@@ -37,6 +37,7 @@ LOGOUT_REDIRECT_URL = '/'
 
 INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
+    'sendemail.apps.SendemailConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
     'phonenumber_field',
     # 'accounts'
 ]
+DEFAULT_FROM_EMAIL = 'newdlcntr@aol.com',
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend',
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

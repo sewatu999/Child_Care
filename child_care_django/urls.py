@@ -30,8 +30,9 @@ urlpatterns = [
     path('about_owner/', include('child_care.urls')),
     path('playtime/', views.playtime, name='playtime'),
     path('playtime/', include('child_care.urls')),
-    path('contact/', views.contact, name='contact'),
-    path('contact/', include('child_care.urls'))
+    # path('email/', views.email, name='email'),
+    path('contact/', include('child_care.urls')),
+    path("", include('sendemail.urls'))
        
 ] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

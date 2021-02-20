@@ -36,8 +36,6 @@ def logout(request, *args, **kwargs):
     return render(request, "/logout.html", my_context)
 
 def child(request):
-    # if request.method == "GET":
-    #     return render(request, template_name= 'child.html')
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
