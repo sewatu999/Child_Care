@@ -4,21 +4,26 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block style %}
-
+<style>
+    body{
+        background-color: bisque;
+        padding: 2em;
+    }
+</style>
 {% endblock %}
 {% endblock%}
 
-<body id="bod">
+<body id="eml">
     {% block content %}
     <nav style='margin-top:1em; '>
         <h1 id="con">Playtime Nursery School</h1>
         <h2 id="con">& Learning Center</h2>
     </nav>
-    <p>
-        {{ mess }}
+    <p id='p'>
+        Phone Number: (937) 268-4395
     </p>
-    <div id="log title" style='float:right; margin-right:25p;'>
-        <h1 id='con'>
+    <div id="log title" style='float:right; margin-right:15px;'>
+        <h1 id='con2'>
             {% block title %}Contact{% endblock %}
         </h1>
     </div>

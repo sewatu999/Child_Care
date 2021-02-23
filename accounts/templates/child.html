@@ -6,7 +6,8 @@
 {% block style %}
     <style>
         body {
-            background-image: url("{% static 'images/20210130_204401.jpg' %}");
+            /* background-image: url("{% static 'images/20210130_204401.jpg' %}"); */
+            background-color: burlywood;
             background-repeat: no-repeat;
             background-size: 100vw 100vh;
             padding-bottom: 10px;
@@ -20,16 +21,16 @@
 
 <body id="bod">
 {% block content %}
-    <nav>
+    <nav class='nav' id='cca'>
         <h1 id="te">Playtime Nursery School</h1>
         <h2 id="te">& Learning Center</h2>
+        
+        <div id="rec">
+            <h1>
+                {% block title %}Create Child Account{% endblock %}
+            </h1>
+        </div>
     </nav>
-    <br>
-    <div id="rec">
-        <h1>
-            {% block title %}Create Child Account{% endblock %}
-        </h1>
-    </div>
     <br>
     <div class="container">
         <form class="form-group" id="cld" autocomplete="off" method="post" action="{url 'child/'}">
