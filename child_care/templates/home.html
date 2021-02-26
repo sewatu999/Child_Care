@@ -13,12 +13,28 @@
         margin-left: 20px;
         height: 300%;        
     }
-    .topnav .nav .mainMenu 
+    /* .topnav .mainMenu 
     {
         float: right;
         list-style-type: none;
+        padding-right: 2em;
+    } */
+    .topnav 
+    {
+        border-bottom: black;
+        overflow: hidden;    
     }
-    
+    /* .topnav .mainMenu a
+    {
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        color: rgb(196, 5, 5);
+    } */
+    /* .topnav .mainMenu :hover
+    {
+        background-color: aliceblue;
+    } */
     
     </style> 
 {% endblock %}
@@ -27,30 +43,24 @@
     {% block content %}
     <!-- <header> -->
         <!-- <navbar class="nave"> -->
+        <nav class='topnav'>
             <h1 id="te">Playtime Nursery School</h1>
             <h2 id=two>& Learning Center</h2>
-            <nav class='topnav'>
-                <br>
-                <!-- <div class='nav'> -->
-                    <ul class="mainMenu" id="nav-ul">
-                        <li><a href= 'register/' >Register</a></li>
-                        <li><a href='login/'>Login</a></li>
-                        <li><a href='staff/'>Staff</a></li>
-                        <li><a href='contact/'>Contact</a></li>
-                        
-                        <span class="icons">
-                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>    
-                        
-                    </ul>
+                <div class='mainMenu'>
+                    <a href= 'register/' >Register</a>
+                    <a href='login/'>Login</a>
+                    <a href='staff/'>Staff</a>
+                    <a href='contact/'>Contact</a>
+                    <a href='playtime/'>Playtime</a>
+                    <span class="icons">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>    
                 </div>
         </nav>    
-            <!-- </div>
-            <div id='fon' style="float:right; color:rgb(196, 5, 5); margin-right: 20px;">
-                <h5 >{{ my_text }}</h5>
-            </div> -->
+            
+            
         <!-- </navbar> -->
     <!-- </header> -->
     

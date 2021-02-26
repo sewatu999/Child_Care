@@ -12,7 +12,7 @@ def home(request):
     
     return render(request, "home.html", my_context)
 
-def about_owner(request):
+def staff(request):
     return render(request, "staff.html", {})          
 
 def playtime(request):

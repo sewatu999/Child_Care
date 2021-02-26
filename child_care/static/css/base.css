@@ -12,17 +12,13 @@
     border-radius: 30px;
 
 }
-#cca
-{
-    background-color: gray;
-    background-size: cover;
-}
-/* #te
+
+#te
 {
     color: rgb(196, 5, 5);
     margin-top: 1rem;
     
-} */
+}
 #two
 {
      color: rgb(196, 5, 5); 
@@ -37,9 +33,47 @@
 {
     color: #ff0000;
 }
+.regt a
+{
+    color: #ff0000;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-align: center;
+    float: right;
+}.regt a:hover
+{
+    background-color: bisque;
+}
+#regt1
+{
+    color: whitesmoke;
+    /* float: right; */
+}
+#reg
+{
+    color: whitesmoke;
+   
+    
+}
 #lg 
 {
     color: white;
+    padding-right: 2em;
+}
+.lgn a
+{
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 17px;
+    margin-right:  2em;
+    /* padding-right: 2em; */
+}
+.lgn a:hover
+{
+    
+    background-color: saddlebrown;
 }
 #log_btn
 {
@@ -56,10 +90,15 @@
 #ctn
 {
     float: left;
+    color: whitesmoke;
 }
 #all_btn
 {
     border-radius: 20px;
+}
+#btn-success
+{
+    margin-left: 2em;
 }
 #reb
 {
@@ -74,27 +113,57 @@
 }
 #cld
 {
-    color: #ffffff;
+    color: rgb(196, 5, 5);
 }
 #rec
 {
     color: rgb(196, 5, 5);
     float: right;
-    background-color: gray;
+    /* background-color: gray; */
     /* border-bottom-style: dotted; */
     /* border-bottom-color: black; */
 }
 /* .mainMenu
 {
     float: right;
+    padding-right: 2em;
+
 } */
-.mainMenu li a:hover
+.topnav .mainMenu 
 {
-    background: rgb(196, 5, 5);
-    /* display: inline-block; */
-    font-family: 'Courier New', Courier, monospace;
-    padding: 10px, 20px;
-    /* text-decoration: none; */
+    float: right;
+    list-style-type: none;
+    padding-right: 2em;
+}
+.topnav .mainMenu a
+{
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    color: rgb(196, 5, 5);
+}
+.topnav .mainMenu :hover
+{
+    background-color: bisque;
+}
+.main
+{
+    float: right;
+    list-style-type: none;
+    
+}
+.main a
+{
+    
+    color: rgb(196, 5, 5);
+    padding: 14px, 16px; 
+    font-size: 17px;
+    text-align: center;
+    
+}
+.main a:hover
+{
+    background-color: whitesmoke;
 }
 
 @media screen and (max-width:767px)
@@ -113,26 +182,22 @@
         flex-direction: column;
     }
 } 
-#eml
-{
-    background-color: bisque;
-}
+
 /* .topnav 
 {
-    background-color: beige;
-    overflow: hidden;
-    
-    
+    border-bottom: black;
+    overflow: hidden;    
 } */
 
 /* #con
 {
-    margin-left: 20px;
+    color: rgb(196, 5, 5);
 }
 #con2
 {
     margin-right: 20px;
-} */
+    color: rgb(196, 5, 5);
+}  */
 
 
 

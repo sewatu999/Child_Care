@@ -14,18 +14,18 @@
 
 <body id="bod">
     {% block content %}
-    <nav>
-        <h1 id="tee">Playtime Nursery School</h1>
-        <h2 id="tee">& Learning Center</h2>
-        <button id='hme' type='submit'>
-            <a href='logout/'>Logout</a>
-        </button>
-        <button id='hme' type='submit'>
-            <a href='home/'>Home</a>
-        </button>
+    <nav class='topnav'>
+        <h1 id="te">Playtime Nursery School</h1>
+        <h2 id="two">& Learning Center</h2>
+            <div class="mainMenu">
+                <a href='home/'>Home</a>
+                <a href='staff/'>Staff</a>
+                <a href='contact/'>Contact</a>
+                <a href='logout/'>Logout</a>
+            </div>
     </nav>
     
-          <h5 id='tee'>{{ my_text }}</h5>
+          <h5 id='te'>{{ my_text }}</h5>
     <div id='img1'>
         <img src="{% static '/images/20210119_222527.jpg' %}" alt='girl on bike' width='250px' height='250px'> 
     </div>
