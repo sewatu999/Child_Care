@@ -47,10 +47,10 @@
     </nav>
     <br>
     <div class="container">
-        <form class="form-group" id="reg"  autocomplete="off" method="post" action="{url 'register/'}">
+        <form class="form-group" id="reg"  autocomplete="off" method="post" >
             {% csrf_token %} {{ form.as_p }}
             
-            <button id='all_btn' type="submit" class="btn btn-success">Register</button>
+            <button id='all_btn' type="submit" value='submit' class="btn btn-success">Register</button>
         </form>
     </div>
     <!-- <button id='reb' type='button'>

@@ -8,8 +8,7 @@ def home(request):
     my_context ={
         'text':  'Encouraging and molding intelligent future leaders',
         # 'my_text': 'Phone Number: (937) 268-4395' 
-    }
-    
+    }      
     return render(request, "home.html", my_context)
 
 def staff(request):

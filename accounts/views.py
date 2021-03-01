@@ -9,19 +9,15 @@ from django.contrib.auth.forms import AuthenticationForm
 # Create your views here.
 
 def register(request):
-    # if request.method == "GET":
-    #     return render(request, template_name= 'register.html')
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('accounts/login')
+            return redirect('accounts/child')
     user = RegisterForm()
     return render(request, "register.html", {'form': user})
 
 def login(request):
-    # if request.method == "GET":
-    #     return render('accounts/login/')
     if request.method == "POST":
         form = AuthenticationForm(data= request.POST)
         if form.is_valid():

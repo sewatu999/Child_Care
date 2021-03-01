@@ -2,22 +2,21 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm
-# from phonenumber_field import phonenumber
+from phonenumber_field.formfields import PhoneNumberField
 
 
 class RegisterForm(UserCreationForm):
     firstname = forms.CharField(label = "Enter First Name",max_length = 100)
     lastname = forms.CharField(label = "Enter Last Name",max_length = 100)
-    phone_number = forms.IntegerField(label = "Enter phone number",)
+    phone_number = PhoneNumberField()
     email = forms.EmailField(label = "Enter email address",max_length = 200)
-    username = forms.CharField(label = "Enter Username",max_length=100)
-    password = forms.CharField(label = "Enter password",max_length = 200)
+    # username = forms.CharField(label = "Enter Username",max_length=100)
+    # password = forms.CharField(label = "Enter password",max_length = 200)
     emergency_contact = forms.CharField(label = "Enter Emergency Contact",max_length = 200)
-    emergency_phonenumber = forms.IntegerField(label = "Enter Emergency Phone Number",)
-
+    emergency_phonenumber = PhoneNumberField()
     class Meta:
         model = User
-        fields = ["firstname", "lastname", "username", "password", "email", "emergency_contact", ] 
+        fields = ["firstname", "lastname", "phone_number", "email", "emergency_contact", "emergency_phonenumber" ] 
         # widgets = {
         #     "password": forms.PasswordInput,
         #     # "email": forms.email
