@@ -24,7 +24,7 @@ SECRET_KEY = 'movsj+q36b1nmghq^q0(-ye6907aey-6oz*^c$&1*khpv3bdqz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.playtime_nursery.com', 'localhost', '127.0.0.1']
 
 
 # Application definition

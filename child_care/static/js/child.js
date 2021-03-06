@@ -7,15 +7,15 @@
 //     }
 
 // }
-var navbar = document.querySelector('.navbar');
-var mainMenu = document.querySelector('.mainMenu');
+// var navbar = document.querySelector('.navbar');
+// var mainMenu = document.querySelector('.mainMenu');
 
-navbar.addEventListener('onclick', (e) => {
-    e.preventDefault();
-    if (window.getComputedStyle(mainMenu).display === 'block'){
-        mainMenu.style.display = 'none';
-    } else {
-        mainMenu.style.display = 'block';
-    }
+// navbar.addEventListener('onclick', (e) => {
+//     e.preventDefault();
+//     if (window.getComputedStyle(mainMenu).display === 'block'){
+//         mainMenu.style.display = 'none';
+//     } else {
+//         mainMenu.style.display = 'block';
+//     }
     
-});
+// });

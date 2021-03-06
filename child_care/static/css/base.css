@@ -2,7 +2,6 @@
 {
     border-width: 23px;
     
-    /* margin-left: 20px; */
 }
 #hme
 {
@@ -22,7 +21,6 @@
 #two
 {
      color: rgb(196, 5, 5); 
-     /* float: left; */
 }
 #fee
 {
@@ -47,13 +45,10 @@
 #regt1
 {
     color: whitesmoke;
-    /* float: right; */
 }
 #reg
 {
     color: whitesmoke;
-   
-    
 }
 #lg 
 {
@@ -68,7 +63,6 @@
     padding: 14px 10px;
     font-size: 17px;
     margin-right:  2em;
-    /* padding-right: 2em; */
 }
 .lgn a:hover
 {
@@ -119,16 +113,7 @@
 {
     color: rgb(196, 5, 5);
     float: right;
-    /* background-color: gray; */
-    /* border-bottom-style: dotted; */
-    /* border-bottom-color: black; */
 }
-/* .mainMenu
-{
-    float: right;
-    padding-right: 2em;
-
-} */
 .topnav .mainMenu 
 {
     float: right;
@@ -168,11 +153,11 @@
 
 @media screen and (max-width:767px)
 {
-    .nave .mainMenu li a 
+    .topnav .mainMenu a 
     {
         padding: 10px;
     }
-    .nave .mainMenu
+    .topnav .mainMenu
     {
         display: none;
     }
