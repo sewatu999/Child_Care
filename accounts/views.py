@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django import forms
 from .forms import RegisterForm
 from .forms import ChildForm
-from django.contrib.auth.forms import UserCreationForm
+# from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 
 # Create your views here.

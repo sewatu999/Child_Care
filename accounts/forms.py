@@ -17,11 +17,7 @@ class RegisterForm(UserCreationForm):
     class Meta:
         model = User
         fields = ["firstname", "lastname", "phone_number", "email", "emergency_contact", "emergency_phonenumber" ] 
-        # widgets = {
-        #     "password": forms.PasswordInput,
-        #     # "email": forms.email
-
-        # }
+        
 
 class login(AuthenticationForm):
     username = forms.CharField(label = "Enter username",max_length = 200)

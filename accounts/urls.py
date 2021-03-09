@@ -20,7 +20,7 @@ path('login/', include("child_care.urls")),
 
 path('child/', views.child, name='child'),
 
-path('child/', include("child_care.urls")),
+# path('child/', include("child_care.urls")),
 
 
 
