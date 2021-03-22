@@ -152,9 +152,15 @@
 }
 .ply
 {
-    float: right;
+    /* float: right; */
     color: rgb(196, 5, 5);
     margin-top: 2em;
+    /* padding-right: 2em; */
+}
+.pns
+{
+    float: right;
+    padding-right: 2em;
 }
 
 @media screen and (max-width:767px)
